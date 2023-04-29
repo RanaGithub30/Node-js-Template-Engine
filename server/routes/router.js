@@ -19,4 +19,17 @@ app.get("", (req, res) => {
     });
 });
 
+
+/**
+ * check the given route is already defined or not?
+ * if not defined, it will redirect to 404 NOt Found Page
+ * else redirect to that particular page 
+*/
+
+app.get('*', (req, res) => {
+    res.render('404', {
+        errorcomment: "Back To Home",
+    });
+});
+
 module.exports = app

@@ -7,11 +7,9 @@ const PORT = 8000;
 const hbs = require("hbs");
 
 // set partials path
+// builtin middleware
 const dir = path.dirname(__filename);
 const partialspath = path.join(dir, "/partials");
-
-// // builtin middleware
-// const staticPath = path.join('_dirname', "");
 
 /**
  * Partials is just like templating in laravel to separate headers & footers & other common parts of a website
